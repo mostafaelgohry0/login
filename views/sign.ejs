@@ -1,0 +1,157 @@
+<!doctype  html>
+
+<html>
+    <head>
+
+    <title>  wellcome</title>
+
+        <meta charset="utf-8">
+        <link rel="icon" href="img/">
+        <link rel="stylesheet"  href="css/bootstrap.css">
+        <link rel="stylesheet"  href="css/mycss.css">
+        <link rel="stylesheet"  href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--IE-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--FOR mobile-->
+    
+    </head>
+    
+    
+    <!------------------------------------------------------------>
+    
+    
+    <body>
+      <br>  
+      <h1> <center> WELLCOME  </center> </h1>
+      <p class="message"><%=checkSign%>  <%=test%> </p> <p> </p>
+
+
+
+      <div class="container">
+        <section class="sign">
+          <form method="post" enctype="multipart/form-data" >
+
+            <div class="row">
+              <div  class="col-xs-6 col-sm-4 col-lg-3" >   
+                 <label>Frist name</label>
+              </div>
+              <div  class="col-xs-6 col-sm-6 col-lg-6"   > 
+                <input    type="text"  name="frist_name"  class="form-control" placeholder="frist name">
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-xs-6 col-sm-6 col-lg-3" > 
+               <label  > Last name </label>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-lg-6" > 
+                <input type="text"  name="last_name" class="form-control" placeholder="last name" >
+              </div>
+            </div>
+ 
+
+
+
+   <div class="row">
+    <div class="col-xs-6 col-sm-6 col-lg-3" > 
+     <label >Email</label>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-lg-6" > 
+     <input type="email"  name="email" class="form-control"  placeholder="Email">
+  </div>
+
+</div>
+ 
+
+
+   <div class="row">
+    <div class="col-xs-6 col-sm-6 col-lg-3" > 
+     <label >Password</label>
+  
+    </div>
+    <div class="col-xs-6 col-sm-6 col-lg-6" > 
+ 
+    <input type="password"   name="password" class="form-control"  placeholder="Password">
+  </div>
+
+</div>
+ 
+
+
+   <div class="row">
+    <div class="col-xs-6 col-sm-6 col-lg-3" > 
+    <label > birth day </label>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-lg-6" > 
+    <input type="date"  name="birth_day" class="form-control" >
+  </div>
+
+</div>
+ 
+
+
+   <div class="row">
+    <div class="col-xs-6 col-sm-6 col-lg-3" > 
+   <label >Adress</label>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-lg-6" > 
+     <input type="text"  name="adress"  class="form-control"  placeholder="adress">
+  </div>
+
+</div>
+ 
+
+
+ <div class="row">
+    <div class="col-xs-6 col-sm-6 col-lg-3" > 
+   <label >Image</label>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-lg-6" > 
+     <input type="file" name="image"  id = "myimage" class="form-control" >
+  </div>
+
+</div>
+ 
+
+ <div class="row">
+    <div class="col-xs-6 col-sm-6 col-lg-3" > 
+  <label >type</label>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-lg-6" > 
+  <select name="type"  class="form-control" >
+        <option value="male">male</option>
+        <option value="female">female</option>
+        </select>
+  </div>
+
+</div>
+
+ <button  id="loginbutton" type="submit"  name="sign"  class="btn btn-primary btn-lg btn-block">sign IN </button>
+
+</form>
+</section>
+</div>
+       
+<script>
+  $('#myButton').on('click', function () {
+    var $btn = $(this).button('loading')
+    // business logic...
+    $btn.button('reset')
+  })
+</script>
+   
+       <!-----------------------------------------------> 
+    
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+        <script src="js/js.js"></script>  
+    <script src ="js/wow.min.js"></script>
+   <script> new WOW().init();</script>
+    
+    </body>
+
+
+
+</html>
+
